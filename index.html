@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Sign-Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sign-Up Form -->
+        <div id="signup-form">
+            <div class="form-header">
+                <h2>Sign up</h2>
+            </div>
+            <form>
+                <label for="signup-name">Name</label>
+                <input type="text" id="signup-name" placeholder="Enter your name" required>
+                
+                <label for="signup-email">Your Email</label>
+                <input type="email" id="signup-email" placeholder="Enter your email" required>
+                
+                <label for="signup-password">Password</label>
+                <input type="password" id="signup-password" placeholder="Create a password" required>
+                
+                <label for="signup-password-repeat">Repeat your password</label>
+                <input type="password" id="signup-password-repeat" placeholder="Repeat your password" required>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="signup-terms" required>
+                    <label for="signup-terms">I agree to the <a href="#">Terms of Service</a></label>
+                </div>
+                
+                <button type="submit" class="btn">Register</button>
+                
+                <p>I am already a member <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form" class="hidden">
+            <div class="form-header">
+                <h2>Sign in</h2>
+            </div>
+            <form>
+                <label for="login-email">Your Email</label>
+                <input type="email" id="login-email" placeholder="Enter your email" required>
+                
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter your password" required>
+                
+                <div class="checkbox-container">
+                    <input type="checkbox" id="login-remember">
+                    <label for="login-remember">Remember me</label>
+                </div>
+                
+                <button type="submit" class="btn">Login</button>
+                
+                <p>Create an account <a href="#" onclick="showSignUp()">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
